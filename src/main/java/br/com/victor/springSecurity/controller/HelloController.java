@@ -1,4 +1,4 @@
-package br.com.victor.mvc.mudi.controller;
+package br.com.victor.springSecurity.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,8 +1,8 @@
-package br.com.victor.mvc.mudi.controller;
+package br.com.victor.springSecurity.controller;
 
-import br.com.victor.mvc.mudi.model.Pedido;
-import br.com.victor.mvc.mudi.model.StatusPedido;
-import br.com.victor.mvc.mudi.repository.PedidoRepository;
+import br.com.victor.springSecurity.model.Pedido;
+import br.com.victor.springSecurity.model.StatusPedido;
+import br.com.victor.springSecurity.repository.PedidoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

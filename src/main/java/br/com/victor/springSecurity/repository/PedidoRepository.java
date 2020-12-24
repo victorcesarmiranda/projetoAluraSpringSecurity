@@ -1,7 +1,7 @@
-package br.com.victor.mvc.mudi.repository;
+package br.com.victor.springSecurity.repository;
 
-import br.com.victor.mvc.mudi.model.Pedido;
-import br.com.victor.mvc.mudi.model.StatusPedido;
+import br.com.victor.springSecurity.model.Pedido;
+import br.com.victor.springSecurity.model.StatusPedido;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

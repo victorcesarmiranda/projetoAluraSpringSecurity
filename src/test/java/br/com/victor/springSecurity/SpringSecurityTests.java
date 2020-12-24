@@ -1,10 +1,10 @@
-package br.com.victor.mvc.mudi;
+package br.com.victor.springSecurity;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MudiApplicationTests {
+class SpringSecurityTests {
 
     @Test
     void contextLoads() {

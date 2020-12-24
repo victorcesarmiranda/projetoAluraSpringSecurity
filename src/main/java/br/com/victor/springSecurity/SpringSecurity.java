@@ -1,13 +1,13 @@
-package br.com.victor.mvc.mudi;
+package br.com.victor.springSecurity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MudiApplication {
+public class SpringSecurity {
 
     public static void main(String[] args) {
-        SpringApplication.run(MudiApplication.class, args);
+        SpringApplication.run(SpringSecurity.class, args);
     }
 
 }

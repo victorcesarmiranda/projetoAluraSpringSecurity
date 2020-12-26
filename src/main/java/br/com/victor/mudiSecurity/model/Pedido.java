@@ -1,4 +1,4 @@
-package br.com.victor.springSecurity.model;
+package br.com.victor.mudiSecurity.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -22,6 +22,9 @@ public class Pedido {
     private String urlImagem;
 
     private String descricao;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private User user;
 
     @Enumerated(EnumType.STRING)
     private StatusPedido statusPedido;
@@ -80,5 +83,13 @@ public class Pedido {
 
     public void setStatusPedido(StatusPedido statusPedido) {
         this.statusPedido = statusPedido;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

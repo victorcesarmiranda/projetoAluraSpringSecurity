@@ -1,4 +1,4 @@
-package br.com.victor.springSecurity.controller;
+package br.com.victor.mudiSecurity.controller;
 
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;

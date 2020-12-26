@@ -1,7 +1,6 @@
-package br.com.victor.springSecurity.repository;
+package br.com.victor.mudiSecurity.repository;
 
-import br.com.victor.springSecurity.model.Pedido;
-import br.com.victor.springSecurity.model.StatusPedido;
+import br.com.victor.mudiSecurity.model.*;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -11,4 +10,6 @@ import java.util.List;
 public interface PedidoRepository extends JpaRepository<Pedido, Long> {
 
     List<Pedido> findByStatusPedido(StatusPedido aguardando);
+
+    List<Pedido> findAllByUserUsername(String username);
 }

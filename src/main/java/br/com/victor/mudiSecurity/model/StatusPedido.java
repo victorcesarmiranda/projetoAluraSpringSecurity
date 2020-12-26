@@ -1,4 +1,4 @@
-package br.com.victor.springSecurity.model;
+package br.com.victor.mudiSecurity.model;
 
 public enum StatusPedido {
 

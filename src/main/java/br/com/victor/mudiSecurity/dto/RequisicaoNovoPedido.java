@@ -1,7 +1,7 @@
-package br.com.victor.springSecurity.dto;
+package br.com.victor.mudiSecurity.dto;
 
-import br.com.victor.springSecurity.model.Pedido;
-import br.com.victor.springSecurity.model.StatusPedido;
+import br.com.victor.mudiSecurity.model.Pedido;
+import br.com.victor.mudiSecurity.model.StatusPedido;
 
 import javax.validation.constraints.NotBlank;
 

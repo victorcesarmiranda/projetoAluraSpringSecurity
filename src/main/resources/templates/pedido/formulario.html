@@ -1,9 +1,9 @@
 <html lang="pt-br">
-    <head th:replace="~{fragments/base :: head}" ></head>
+    <head th:replace="~{base :: head}" ></head>
     <body>
-        <div th:replace="~{fragments/base :: logo}" ></div>
+        <div th:replace="~{base :: logo}" ></div>
         <div class="container">
-            <div th:insert="~{fragments/base :: titulo('Novo Pedido')}" ></div>
+            <div th:insert="~{base :: titulo('Novo Pedido')}" ></div>
             <div class="card mt-3">
                 <form th:object="${requisicaoNovoPedido}" class="card-body" th:action="@{/pedido/novo}" method="post">
                     <div class="mb-3">

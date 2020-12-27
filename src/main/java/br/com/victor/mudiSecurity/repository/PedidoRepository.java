@@ -1,6 +1,8 @@
 package br.com.victor.mudiSecurity.repository;
 
 import br.com.victor.mudiSecurity.model.*;
+import org.springframework.cache.annotation.*;
+import org.springframework.data.domain.*;
 import org.springframework.data.jpa.repository.*;
 import org.springframework.data.repository.query.*;
 import org.springframework.stereotype.Repository;
@@ -10,7 +12,8 @@ import java.util.List;
 @Repository
 public interface PedidoRepository extends JpaRepository<Pedido, Long> {
 
-    List<Pedido> findByStatusPedido(StatusPedido aguardando);
+    @Cacheable("StatusPedido")
+    List<Pedido> findByStatusPedido(StatusPedido statusPedido, Pageable sort);
 
     List<Pedido> findAllByUserUsername(String username);
 
